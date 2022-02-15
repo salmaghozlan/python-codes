@@ -1,0 +1,13 @@
+mylist=[]
+no_element=int(input("enter the number of elements in the list"))
+
+for i in range (0,no_element):
+    print("enter the number at index",i)
+    no = int(input())
+    mylist.append(no)
+
+for num in range(0 ,len(mylist)-1):
+    if sum(mylist[:num]) == sum(mylist[num+1:]) :
+        print("the index is :",num)
+
+decoration @properity in python
