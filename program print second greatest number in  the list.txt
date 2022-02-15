@@ -1,0 +1,10 @@
+mylist= [1,2,8,10,5,9]
+for i in range(0,len(mylist)):
+    for j in range(0,len(mylist)):
+        if mylist[i]> mylist[j]:
+            num = mylist[j]
+            mylist[j]= mylist[i]
+            mylist[i]=  num
+
+print(mylist)
+print(mylist[1])
